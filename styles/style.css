@@ -1,0 +1,62 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: white;
+}
+
+section nav {
+  margin: 0px 10% 0px 10%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  -ms-flex-negative: 5;
+      flex-shrink: 5;
+}
+
+/*można tę funkcję dodawać między plikami, umożliwia szybkie duplikowanie
+przyklad $direction pozwala na zmienianie zmiennej
+funkcja @extend -kopiuje całą wartość innej np. div.contact {
+    @extend header;
+}*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: red;
+  background: rgba(92, 36, 36, 0.698);
+}
+
+header h1 {
+  color: red;
+}
+
+header button {
+  background: rgba(92, 36, 36, 0.698);
+}
+
+header button:hover {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
