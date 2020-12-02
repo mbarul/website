@@ -1,15 +1,14 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1rem;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
   background: white;
 }
 
-section nav {
+section {
   margin: 0px 10% 0px 10%;
   padding: 10px;
   display: -webkit-box;
@@ -24,39 +23,85 @@ section nav {
           justify-content: space-between;
   -ms-flex-preferred-size: content;
       flex-basis: content;
-  -ms-flex-negative: 5;
-      flex-shrink: 5;
 }
 
-/*można tę funkcję dodawać między plikami, umożliwia szybkie duplikowanie
-przyklad $direction pozwala na zmienianie zmiennej
-funkcja @extend -kopiuje całą wartość innej np. div.contact {
-    @extend header;
-}*/
+section .first {
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: chocolate;
+}
+
 header {
+  min-height: 20vh;
+  background: cadetblue;
+}
+
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: red;
-  background: rgba(92, 36, 36, 0.698);
 }
 
-header h1 {
-  color: red;
+footer h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
 }
 
-header button {
-  background: rgba(92, 36, 36, 0.698);
+footer h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
 }
 
-header button:hover {
-  background-color: blue;
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.socialMedia {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div button {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer div button i {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  background: chartreuse;
+  min-height: 30vh;
 }
 /*# sourceMappingURL=style.css.map */

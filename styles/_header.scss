@@ -1,31 +1,4 @@
-/*można tę funkcję dodawać między plikami, umożliwia szybkie duplikowanie
-przyklad $direction pozwala na zmienianie zmiennej
-funkcja @extend -kopiuje całą wartość innej np. div.contact {
-    @extend header;
-}*/
-@mixin flexCenter($direction, $background) {
-    display: flex;
-    justify-content: center;
-    flex-direction: $direction;
-    background: $background;
-}
-
 header {
-    @include flexCenter(column, red);
-
-    background: $primaryBtn;
-
-    h1 {
-        color: red;
-    }
-
-    button {
-        background: $primaryBtn;
-
-        &:hover {
-            background-color: blue;
-        }
-    }
-
-    ;
+    min-height: 20vh;
+    background: cadetblue;
 }
