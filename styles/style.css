@@ -5,10 +5,45 @@
           box-sizing: border-box;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
-  background: white;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-section {
+header {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  position: relative;
+  text-align: center;
+  left: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .logo img {
+  width: 150px;
+  height: 80px;
+  opacity: 0.5;
+}
+
+header .logo .nameLogo {
+  position: absolute;
+  font-family: 'Molle', cursive;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.25);
+  width: 150px;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(95, 43, 43, 0);
+}
+
+header div.navigation {
   margin: 0px 10% 0px 10%;
   padding: 10px;
   display: -webkit-box;
@@ -18,23 +53,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: content;
-      flex-basis: content;
 }
 
-section .first {
-  padding: 20px;
+header div.navigation button {
+  padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: chocolate;
-}
-
-header {
-  min-height: 20vh;
-  background: cadetblue;
 }
 
 footer {
@@ -100,8 +124,109 @@ footer div button i {
   background-color: rgba(0, 0, 0, 0);
 }
 
-main {
-  background: chartreuse;
-  min-height: 30vh;
+/*Slideshow container*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+}
+
+/*Position the 'next' button to the right*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background with a little bit see-through*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Number text 1/3 etc */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/*Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

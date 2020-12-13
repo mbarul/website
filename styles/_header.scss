@@ -1,4 +1,52 @@
 header {
-    min-height: 20vh;
-    background: cadetblue;
+    min-height: 10vh;
+    display: flex;
+
+
+
+    .logo {
+        position: relative;
+        text-align: center;
+        left: 50px;
+        flex-grow: 1;
+
+        img {
+
+            width: 150px;
+            height: 80px;
+            opacity: 0.5;
+        }
+
+        .nameLogo {
+            position: absolute;
+            font-family: 'Molle', cursive;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.25);
+            width: 150px;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(95, 43, 43, 0.0);
+
+        }
+    }
+
+    div.navigation {
+
+
+        margin: 0px 10% 0px 10%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+
+        button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+
+
+
+        }
+
+    }
 }
