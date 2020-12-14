@@ -135,6 +135,16 @@ footer div button i {
   display: none;
 }
 
+.mySlides img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+  margin: auto;
+  -webkit-transform: translate(5%, 0);
+          transform: translate(5%, 0);
+}
+
 .prev,
 .next {
   cursor: pointer;
@@ -152,7 +162,7 @@ footer div button i {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: white;
+  color: #717171;
 }
 
 /*Position the 'next' button to the right*/
@@ -228,5 +238,42 @@ footer div button i {
   to {
     opacity: 1;
   }
+}
+
+.school {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.school div {
+  margin: 2rem auto;
+  border-style: solid;
+  border-color: #bbb;
+  border-width: 1px;
+  border-radius: 30%;
+  height: 3px;
+  background-color: rgba(236, 167, 40, 0.472);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.school h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 1rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 /*# sourceMappingURL=style.css.map */

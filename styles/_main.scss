@@ -8,6 +8,14 @@
 .mySlides {
     display: none;
 
+    img {
+        height: 300px;
+        object-fit: cover;
+        width: 90%;
+        margin: auto;
+        transform: translate(5%, 0);
+    }
+
 }
 
 .prev,
@@ -23,7 +31,7 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    color: white;
+    color: #717171;
 }
 
 /*Position the 'next' button to the right*/
@@ -100,5 +108,32 @@
 
     to {
         opacity: 1
+    }
+}
+
+.school {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2rem auto;
+
+    div {
+        margin: 2rem auto;
+        border-style: solid;
+        border-color: #bbb;
+        border-width: 1px;
+        border-radius: 30%;
+        height: 3px;
+        background-color: rgba(236, 167, 40, 0.472);
+        flex: 1;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0 1rem;
+        flex: 2;
     }
 }
