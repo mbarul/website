@@ -137,3 +137,43 @@
         flex: 2;
     }
 }
+
+section {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+    div.container_first {
+
+        display: flex;
+
+        justify-content: space-between;
+        padding: 20px 0px;
+
+        img {
+            border-style: solid;
+            border-color: #bbb;
+
+            object-fit: contain;
+            width: 48%;
+        }
+
+    }
+
+    div.container_second {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+
+        img {
+            border-style: solid;
+
+            object-fit: contain;
+            width: 48%;
+        }
+
+    }
+}

@@ -8,57 +8,55 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-header {
-  min-height: 10vh;
+header div.topnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .logo {
+header div.topnav div.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   text-align: center;
-  left: 50px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
-header .logo img {
-  width: 150px;
-  height: 80px;
-  opacity: 0.5;
+header div.topnav div.logo img {
+  width: auto;
+  height: 48px;
 }
 
-header .logo .nameLogo {
-  position: absolute;
-  font-family: 'Molle', cursive;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.25);
-  width: 150px;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: rgba(95, 43, 43, 0);
+header div.topnav div.topnav2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
-header div.navigation {
-  margin: 0px 10% 0px 10%;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+header div.topnav div.topnav2 a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-header div.navigation button {
-  padding: 10px;
+header div.topnav div.topnav2 a:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+header div.topnav div.topnav2 input[type=text] {
+  float: right;
+  padding: 6px;
   border: none;
-  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  border-radius: 0% 10% 10% 0%;
 }
 
 footer {
@@ -275,5 +273,53 @@ footer div button i {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+section {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section div.container_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+section div.container_first img {
+  border-style: solid;
+  border-color: #bbb;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 48%;
+}
+
+section div.container_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+section div.container_second img {
+  border-style: solid;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 48%;
 }
 /*# sourceMappingURL=style.css.map */
