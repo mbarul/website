@@ -1,3 +1,19 @@
+//Open new page: about us etc. - button
+function myFunction(){
+  let myWindow = window.open("", "_blank");
+  myWindow.document.write("<p>Strona w budowie...</p>")
+}
+function Instagram(){
+  window.open("http://www.instagram.com/");
+}
+function Facebook(){
+  window.open("http://www.facebook.com/");
+}
+function Youtube(){
+  window.open("http://www.youtube.com/");
+}
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

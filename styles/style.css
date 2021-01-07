@@ -33,9 +33,11 @@ header div.topnav div.topnav2 {
           flex: 5;
 }
 
-header div.topnav div.topnav2 a {
+header div.topnav div.topnav2 button {
+  background-color: Transparent;
+  border: none;
+  outline: none;
   float: left;
-  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -43,9 +45,10 @@ header div.topnav div.topnav2 a {
   font-size: 16px;
 }
 
-header div.topnav div.topnav2 a:hover {
+header div.topnav div.topnav2 button:hover {
   background-color: #bbb;
   color: white;
+  cursor: pointer;
 }
 
 header div.topnav div.topnav2 input[type=text] {
@@ -109,6 +112,7 @@ footer div.contact {
 
 footer div button {
   padding: 10px;
+  outline: none;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
   width: 50px;
