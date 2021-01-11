@@ -44,3 +44,33 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+//Google map
+function myMap() {
+  //map options
+var mapProp= {
+  center:new google.maps.LatLng(41.69323, -8.83287),
+  zoom:7,
+
+};
+//new map
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+//add marker
+let marker = new google.maps.Marker ({
+  
+  position:{lat:41.69323, lng:-8.83287},
+  animation:google.maps.Animation.BOUNCE,
+  map:map
+})
+// Zoom to 9 when clicking on marker
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(15);
+  map.setCenter(marker.getPosition());
+});
+//Info Window
+let infoWindow = new google.maps.InfoWindow({
+  content:'<h5>Nasza szkółka</h5>'
+})
+marker.addListener('click', function(){
+  infoWindow.open(map,marker);
+});
+}
