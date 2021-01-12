@@ -106,7 +106,26 @@
         <h4>Znajdź nas</h4>
         <div class ="contact">
             <div id="googleMap"></div>
-            <div id="ContactForm"></div>
+            <div id="ContactForm">
+                <form action="action_page.php">
+                    <label for="fname">Imię</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Imię...">
+                    <label for="lname">Nazwisko</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Nazwisko...">
+
+                    <label for="sex">Płeć</label>
+                    <select name="sex" id="sex">
+                    <option value="male">Mężczyzna</option>
+                    <option value="female">Kobieta</option>
+                    </select>
+                    <label for="pnumber">Numer telefonu</label>
+                    <input type="text" id="pnumber" name="phonenumber" placeholder="Numer telefonu...">
+                    <label for="mail">E-mail</label>
+                    <input type="text" id="mail" name="email" placeholder="E-mail...">
+                    <textarea id="subject" name="subject" placeholder="Wiadomość..." style="height:140px"></textarea>
+                     <input type="submit" value="Wyślij">
+                </form>
+            </div>
             
         </div>
     </footer>

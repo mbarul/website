@@ -10,6 +10,7 @@
 
 header {
   width: 95%;
+  font-weight: 900;
 }
 
 header div.topnav {
@@ -109,19 +110,75 @@ footer div.socialMedia {
           justify-content: center;
 }
 
-footer div #googleMap {
-  width: 50%;
-  margin: auto;
-  height: 400px;
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+footer .contact #googleMap {
+  width: 48%;
+  height: 600px;
   border-style: solid;
 }
 
-footer div #ContactForm {
-  width: 50%;
-  margin: auto;
-  height: 400px;
-  background-color: yellow;
+footer .contact #ContactForm {
+  width: 48%;
+  margin: right;
+  height: 600px;
+  padding: 20px;
+  background-color: #bbb;
   border-style: solid;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+
+footer .contact #ContactForm label {
+  padding: 10px;
+  font-weight: 800;
+}
+
+footer .contact #ContactForm input[type=text],
+footer .contact #ContactForm select,
+footer .contact #ContactForm textarea {
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  /* Some padding */
+  border: 1px solid #bbb;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 5px;
+  /* Add a top margin */
+  margin-bottom: 10px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+footer .contact #ContactForm input[type=submit] {
+  background-color: #121312;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer .contact #ContactForm input[type=submit]:hover {
+  background-color: #2e2f2e;
 }
 
 footer button {

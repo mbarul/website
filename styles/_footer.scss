@@ -31,21 +31,77 @@ footer {
             justify-content: center;
         }
 
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px 0px;
+
         #googleMap {
-            width: 50%;
-            margin: auto;
-            height: 400px;
+            width: 48%;
+            height: 600px;
             border-style: solid;
 
 
         }
 
         #ContactForm {
-            width: 50%;
-            margin: auto;
-            height: 400px;
-            background-color: yellow;
+            width: 48%;
+            margin: right;
+            height: 600px;
+            padding: 20px;
+            background-color: #bbb;
             border-style: solid;
+
+            label {
+                padding: 10px;
+                font-weight: 800;
+
+            }
+
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                /* Full width */
+
+                padding: 10px;
+                /* Some padding */
+                border: 1px solid #bbb;
+
+                /* Rounded borders */
+                box-sizing: border-box;
+                /* Make sure that padding and width stays in place */
+                margin-top: 5px;
+                /* Add a top margin */
+                margin-bottom: 10px;
+                /* Bottom margin */
+                resize: vertical
+                    /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: #121312;
+                color: white;
+                padding: 12px 40px;
+                border: none;
+
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #2e2f2e;
+            }
+
+            /* Add a background color and some padding around the form */
+
         }
     }
 
@@ -64,6 +120,4 @@ footer {
             background-color: rgba(0, 0, 0, 0);
         }
     }
-
-
 }
